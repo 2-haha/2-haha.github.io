@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>☆マイホームページへようこそ☆</title>
+  <style>
+    body {
+      background-color: #ffccff; /* ピンクの背景 */
+      background-image: url('https://i.imgur.com/abc123.gif'); /* キラキラGIF背景 */
+      font-family: "MS Pゴシック", sans-serif;
+      color: #0000ff; /* 青い文字 */
+      text-align: center;
+    }
+    table {
+      border: 2px solid #ff00ff; /* ピンクの枠 */
+      background-color: #ffffff;
+      margin: auto;
+    }
+    h1 {
+      color: #ff0000; /* 赤い見出し */
+      text-shadow: 2px 2px #ffff00; /* 黄色の影 */
+    }
+    .blink {
+      animation: blink 1s infinite; /* 点滅 */
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    img {
+      border: 3px double #00ff00; /* 緑のダブル枠 */
+    }
+  </style>
+</head>
+<body>
+  <table width="600" cellpadding="10">
+    <tr>
+      <td>
+        <h1 class="blink">☆★ ようこそ！[あなたの名前]のホームページ ★☆</h1>
+        <p>2000年代のキラキラワールドへ！(^^)d</p>
+        <!-- キラキラGIF -->
+        <img src="https://i.imgur.com/xyz789.gif" alt="キラキラ">
+        <p>☆ 訪問者数: <img src="https://www.free-counter.jp/sample/sample_1.gif" alt="カウンター"></p>
+        <p><b>最終更新: 2025/8/21</b></p>
+        <hr>
+        <!-- メニュー -->
+        <p>
+          <a href="#about">自己紹介</a> | 
+          <a href="#links">リンク集</a> | 
+          <a href="#guestbook">ゲストブック</a>
+        </p>
+        <hr>
+        <!-- コンテンツ -->
+        <h2 id="about">★ 自己紹介 ★</h2>
+        <p>こんにちは！[あなたの名前]だよ！趣味は[趣味]！よろしくね～(*^_^*)</p>
+        <!-- MIDI音楽（ブラウザ制限あり） -->
+        <embed src="https://example.com/sample.mid" hidden="true" autostart="true" loop="true">
+        <h2 id="links">★ リンク集 ★</h2>
+        <p>
+          <a href="https://example.com">お気に入りのサイト</a><br>
+          <a href="https://example.com">かっこいいサイト</a>
+        </p>
+        <h2 id="guestbook">★ ゲストブック ★</h2>
+        <p>コメント残してくれると嬉しいな！(*^▽^*)</p>
+        <!-- シンプルなフォーム（仮） -->
+        <form>
+          <input type="text" placeholder="名前"><br>
+          <textarea placeholder="コメント書いてね！"></textarea><br>
+          <input type="submit" value="送信！">
+        </form>
+      </td>
+    </tr>
+  </table>
+  <p><marquee>☆★ キラキラ～！また来てね～！ ★☆</marquee></p>
+</body>
+</html>
