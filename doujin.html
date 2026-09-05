@@ -1,27 +1,100 @@
+HTML
 <!DOCTYPE html>
-
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>2はは　同人サークル</title>
-<style>
-   #wrapper {
-            width: 800 px;
-            margin: 0 auto;
-        }
+  <title>2はは 同人サークル</title>
+  <style>
+    /* 1. ページ全体の背景（レトロ感のある淡い色や市松模様風の設定） */
+    body {
+        background-color: #e6eeff; /* 昔懐かしい淡いブルー系の背景色 */
+        margin: 0;
+        padding: 20px 0;
+        font-family: "MS Pゴシック", sans-serif; /* 2000年代定番のフォント */
+    }
 
+    /* 2. サイト全体をまとめる中央の枠 */
+    #wrapper {
+        width: 800px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 2px solid #6688cc; /* 外枠に線を引いてくっきりさせます */
+    }
+
+    /* 3. 上部のヘッダー領域 */
+    #header {
+        background-color: #88aadd;
+        color: #ffffff;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    /* 4. メインコンテンツ（左メニュー＋右コンテンツ）の包み紙 */
+    #container {
+        display: flex; /* 左右に並べるための現代的な書き方 */
+    }
+
+    /* 5. 左側：メニュー（サイドバー） */
+    #sidebar {
+        width: 220px; /* 左メニューの幅 */
+        background-color: #f0f4fb;
+        padding: 10px;
+        border-right: 1px solid #ccddee; /* 右側に境界線を引く */
+    }
+
+    /* 6. 右側：メインコンテンツ */
+    #main {
+        width: 580px; /* 800px - 220px = 580px */
+        padding: 15px;
+        box-sizing: border-box; /* パディングを含めた幅計算にする設定 */
+    }
+
+    /* 7. 一番下のフッター */
+    #footer {
+        background-color: #88aadd;
+        color: #ffffff;
+        text-align: center;
+        padding: 8px;
+        font-size: 12px;
+        clear: both;
+    }
   </style>
-
 </head>
-
 <body>
 
     <div id="wrapper">
+        <div id="header">
+            <h1>2はは</h1>
+            <p>～ 同人サークル「2はは」 OFFICIAL WEB SITE ～</p>
+        </div>
 
-        <h1>2はは</h1>
+        <div id="container">
+            <div id="sidebar">
+                <h3>♥ MENU ♥</h3>
+                <ul>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Works (同人誌)</a></li>
+                    <li><a href="#">Blog (近況報告)</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
 
-        <p>同人サークル「2はは」のホームページです。</p>
+            <div id="main">
+                <h2>Welcome!</h2>
+                <p>同人サークル「2はは」のホームページへようこそ！<br>
+                ここはサークル「2はは」の活動情報や、発行した同人誌の情報を掲載しているサイトです。</p>
+            </div>
+        </div>
 
+        <div id="footer">
+            <p>(C) 2はは All Rights Reserved.</p>
+        </div>
     </div>
 
 </body>
