@@ -22,17 +22,18 @@ HTML
     }
 
     /* 3. 上部のヘッダー領域 */
-    #header {
-        background-color: #88aadd;
-        color: #ffffff;
-        padding: 15px;
-        text-align: center;
-    }
+#header {
+    background-color: #88aadd;
+    text-align: center;
+    line-height: 0; /* 画像の下にできる謎の数ピクセルの隙間を消すおまじない */
+}
 
-    #header h1 {
-        margin: 0;
-        font-size: 28px;
-    }
+/* ヘッダー画像を枠幅（800px）にぴったり合わせる設定 */
+#header img {
+    width: 100%;
+    height: auto;
+    border: none; /* 昔のブラウザでリンク付き画像に出る青い枠線を消す */
+}
 
     /* 4. メインコンテンツ（左メニュー＋右コンテンツ）の包み紙 */
     #container {
@@ -85,11 +86,11 @@ HTML
                 </ul>
             </div>
 
-            <div id="main">
-                <h2>Welcome!</h2>
-                <p>同人サークル「2はは」のホームページへようこそ！<br>
-                ここはサークル「2はは」の活動情報や、発行した同人誌の情報を掲載しているサイトです。</p>
-            </div>
+           <div id="header">
+    <a href="convert_from_jpg_fc9a4e4f1a244d2439f018de2227613f.gif">
+        <img src="header.png" alt="2はは ～ 同人サークル「2はは」 OFFICIAL WEB SITE ～">
+    </a>
+</div>
         </div>
 
         <div id="footer">
