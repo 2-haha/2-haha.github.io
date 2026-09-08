@@ -1,101 +1,192 @@
-HTML
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>2はは 同人サークル</title>
   <style>
-    /* 1. ページ全体の背景（レトロ感のある淡い色や市松模様風の設定） */
+    /* 全体設定 */
     body {
-        background-color: #e6eeff; /* 昔懐かしい淡いブルー系の背景色 */
+        background-color: #e6eeff; /* 背景色 */
         margin: 0;
         padding: 20px 0;
-        font-family: "MS Pゴシック", sans-serif; /* 2000年代定番のフォント */
+        font-family: "MS Pゴシック", sans-serif;
     }
 
-    /* 2. サイト全体をまとめる中央の枠 */
+    /* サイト全体の幅と枠線 */
     #wrapper {
         width: 800px;
         margin: 0 auto;
         background-color: #ffffff;
-        border: 2px solid #6688cc; /* 外枠に線を引いてくっきりさせます */
-    }
-
-    /* 3. 上部のヘッダー領域 */
-#header {
-    background-color: #88aadd;
-    text-align: center;
-    line-height: 0; /* 画像の下にできる謎の数ピクセルの隙間を消すおまじない */
-}
-
-/* ヘッダー画像を枠幅（800px）にぴったり合わせる設定 */
-#header img {
-    width: 100%;
-    height: auto;
-    border: none; /* 昔のブラウザでリンク付き画像に出る青い枠線を消す */
-}
-
-    /* 4. メインコンテンツ（左メニュー＋右コンテンツ）の包み紙 */
-    #container {
-        display: flex; /* 左右に並べるための現代的な書き方 */
-    }
-
-    /* 5. 左側：メニュー（サイドバー） */
-    #sidebar {
-        width: 220px; /* 左メニューの幅 */
-        background-color: #f0f4fb;
+        border: 2px solid #6688cc;
         padding: 10px;
-        border-right: 1px solid #ccddee; /* 右側に境界線を引く */
+        box-sizing: border-box;
     }
 
-    /* 6. 右側：メインコンテンツ */
+    /* 1. ヘッダーエリア */
+    #header {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    #header img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* 2. 中間エリア（リンク＋メインコンテンツを横並び） */
+    #contents-area {
+        display: flex;
+        gap: 15px; /* リンクとメインの間のすき間 */
+        margin-bottom: 15px;
+    }
+
+    /* 左：リンクエリア */
+    #sidebar {
+        width: 200px;
+        background-color: #f0f4fb;
+        border: 1px solid #99bbdd;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #sidebar h3 {
+        font-size: 14px;
+        color: #335599;
+        margin-top: 0;
+        border-bottom: 1px dashed #99bbdd;
+        padding-bottom: 5px;
+    }
+    #sidebar ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    #sidebar li {
+        margin-bottom: 8px;
+    }
+    #sidebar a {
+        color: #003399;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    #sidebar a:hover {
+        text-decoration: underline;
+        color: #ff0055;
+    }
+
+    /* 右：メインコンテンツ（最新情報＋イラスト） */
     #main {
-        width: 580px; /* 800px - 220px = 580px */
+        width: 555px;
+        border: 1px solid #99bbdd;
         padding: 15px;
-        box-sizing: border-box; /* パディングを含めた幅計算にする設定 */
+        box-sizing: border-box;
+        background-color: #ffffff;
     }
 
-    /* 7. 一番下のフッター */
-    #footer {
+    /* 最新情報ボックス */
+    .news-box {
+        border: 1px solid #6688cc;
+        background-color: #fdfdfd;
+        margin-bottom: 15px;
+    }
+    .news-title {
         background-color: #88aadd;
         color: #ffffff;
+        font-weight: bold;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .news-body {
+        padding: 10px;
+        font-size: 13px;
+        height: 100px;
+        overflow-y: scroll; /* 2000年代風スクロール枠 */
+    }
+
+    /* イラスト表示エリア */
+    .gallery-box {
         text-align: center;
-        padding: 8px;
+        border: 1px dashed #aaccee;
+        padding: 15px;
+        background-color: #fafafa;
+    }
+    .gallery-box img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+    }
+
+    /* 3. バナーエリア（フッター） */
+    #footer-banner {
+        border-top: 2px solid #6688cc;
+        padding-top: 15px;
+        text-align: center;
         font-size: 12px;
-        clear: both;
+    }
+    .banner-space {
+        margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
 
     <div id="wrapper">
+
+        <!-- 【1】ヘッダー -->
         <div id="header">
-            <h1>2はは</h1>
-            <p>～ 同人サークル「2はは」 OFFICIAL WEB SITE ～</p>
+            <a href="index.html">
+                <!-- 画像のパスは環境に合わせて修正してください -->
+                <img src="images/header.png" alt="2はは ヘッダー">
+            </a>
         </div>
 
-        <div id="container">
+        <!-- 【2】中間エリア（リンク ＋ メイン） -->
+        <div id="contents-area">
+            
+            <!-- 左：リンク -->
             <div id="sidebar">
-                <h3>♥ MENU ♥</h3>
+                <h3>♥ LINK ♥</h3>
                 <ul>
-                    <li><a href="#">Top</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Works (同人誌)</a></li>
-                    <li><a href="#">Blog (近況報告)</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="about.html">サークル紹介</a></li>
+                    <li><a href="works.html">同人誌情報</a></li>
+                    <li><a href="blog.html">近況報告</a></li>
                 </ul>
             </div>
 
-           <div id="header">
-    <a href="convert_from_jpg_fc9a4e4f1a244d2439f018de2227613f.gif">
-        <img src="header.png" alt="2はは ～ 同人サークル「2はは」 OFFICIAL WEB SITE ～">
-    </a>
-</div>
+            <!-- 右：メイン（最新情報 ＋ イラストとか） -->
+            <div id="main">
+                
+                <!-- 最新情報枠 -->
+                <div class="news-box">
+                    <div class="news-title">最新情報</div>
+                    <div class="news-body">
+                        2026/09/08 サイト開設しました！<br>
+                        2026/09/01 新刊の作業を進めています。<br>
+                        2026/08/15 イベントご参加ありがとうございました！
+                    </div>
+                </div>
+
+                <!-- イラストとかエリア -->
+                <div class="gallery-box">
+                    <p style="margin-top:0; font-weight:bold; color:#555;">【 Main Illustration 】</p>
+                    <!-- ここにイラスト画像が入ります -->
+                    <img src="images/top_illust.png" alt="メインイラスト" width="300" height="300" style="background:#eee;">
+                </div>
+
+            </div>
+
         </div>
 
-        <div id="footer">
+        <!-- 【3】バナーエリア（フッター） -->
+        <div id="footer-banner">
+            <div class="banner-space">
+                <!-- 相互リンクバナーなどを並べる場所 -->
+                <img src="images/banner.gif" alt="バナー" width="200" height="40" style="background:#ddd;">
+            </div>
             <p>(C) 2はは All Rights Reserved.</p>
         </div>
+
     </div>
 
 </body>
