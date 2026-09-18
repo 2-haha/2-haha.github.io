@@ -3,7 +3,9 @@ font-family:"ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ�
 color:#630;
 line-height:25px;
 font-size:0.95em;
-
+display: flex;
+  align-items: center;
+  justify-content: center;
             
 /* 中央に表示する縦長のエリア */
 .center-box {
@@ -12,9 +14,3 @@ font-size:0.95em;
     background-color: #ffffff; /* 中央の背景色（白など） */
 }
 
-.container {
-            height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
