@@ -10,6 +10,7 @@ font-size:0.95em;
     justify-content: center;
     align-items: center;
 　　min-height: 100vh;
+　　margin: 0;
 }
 
 /* 中央に表示する縦長のエリア */
