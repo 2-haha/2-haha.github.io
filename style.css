@@ -11,3 +11,10 @@ font-size:0.95em;
 　　min-height: 100vh;
     background-color: #ffffff; /* 中央の背景色（白など） */
 }
+
+.container {
+            height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
