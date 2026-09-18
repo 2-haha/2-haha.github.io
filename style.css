@@ -11,15 +11,16 @@ font-size:0.95em;
     align-items: center;
 　　min-height: 100vh;
 　　margin: 0;
+　　background-image:"背景.gif";
 }
 
 /* 中央に表示する縦長のエリア */
 .center-box {
     width: 600px;
+　　min-height: 100vh;
     background-color: #ffffff; /* 中央の背景色（白など） */
     
  /* 中身の配置・スクロール設定 */
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto;    /* 中身があふれた時にスクロールさせる */
 }
