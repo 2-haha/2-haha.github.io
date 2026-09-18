@@ -13,5 +13,8 @@ display: flex;
     width: 600px;
      min-height: 100vh;
     background-color: #ffffff; 
+  padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
