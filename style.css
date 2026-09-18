@@ -3,15 +3,15 @@ font-family:"ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ�
 color:#630;
 line-height:25px;
 font-size:0.95em;
-
-            
-.center-box {
-    width: 600px;
-    background-color: #ffffff; 
-  
-  display: flex;
+display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+            
+.center-box {
+    width: 600px;
+     min-height: 100vh;
+    background-color: #ffffff; 
 }
 
