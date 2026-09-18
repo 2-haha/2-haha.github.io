@@ -16,7 +16,6 @@ font-size:0.95em;
 /* 中央に表示する縦長のエリア */
 .center-box {
     width: 600px;
-　　height: 100vh;
     background-color: #ffffff; /* 中央の背景色（白など） */
     
  /* 中身の配置・スクロール設定 */
