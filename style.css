@@ -12,7 +12,7 @@ display: flex;
 .center-box {
     width: 600px;
      min-height: 100vh;
-    background-color: #CCFFFF; 
+    background-color: #FFFFFF; 
   padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
