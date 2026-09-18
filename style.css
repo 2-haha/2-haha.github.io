@@ -5,21 +5,9 @@ line-height:25px;
 font-size:0.95em;
 
             
-            /* 中央に配置するためのFlexbox設定 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-　　min-height: 100vh;
-　　margin: 0;
-}
-
 /* 中央に表示する縦長のエリア */
 .center-box {
     width: 600px;
 　　min-height: 100vh;
     background-color: #ffffff; /* 中央の背景色（白など） */
-    
- /* 中身の配置・スクロール設定 */
-    padding: 20px;
-    box-sizing: border-box;
 }
