@@ -9,7 +9,6 @@ font-size:0.95em;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* 画面いっぱいに高さを取る */
 }
 
 /* 中央に表示する縦長のエリア */
@@ -17,9 +16,7 @@ font-size:0.95em;
     width: 600px;        /* 必要に応じて横幅を調整してください（ヘッダーが543pxあるため少し広めにしています） */
     background-color: #ffffff; /* 中央の背景色（白など） */
     
-
-    
-    /* 中身の配置・スクロール設定 */
+ /* 中身の配置・スクロール設定 */
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;    /* 中身があふれた時にスクロールさせる */
