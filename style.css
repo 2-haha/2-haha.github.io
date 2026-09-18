@@ -15,12 +15,9 @@ font-size:0.95em;
 /* 中央に表示する縦長のエリア */
 .center-box {
     width: 600px;        /* 必要に応じて横幅を調整してください（ヘッダーが543pxあるため少し広めにしています） */
-    height: 85vh;        /* ボックスの高さ */
     background-color: #ffffff; /* 中央の背景色（白など） */
     
-    /* 影や角丸（お好みで） */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
+
     
     /* 中身の配置・スクロール設定 */
     padding: 20px;
